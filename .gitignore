@@ -1,0 +1,6 @@
+.idea
+.vscode
+exampleSite/public/
+exampleSite/resources/
+*.lock
+.DS_Store
