@@ -1,0 +1,36 @@
+.home {
+    margin: 1rem auto;
+    max-width: 90rem;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    .avatar img {
+        width: 20rem;
+        height: auto;
+        border-radius: 50%;
+      
+        @media only screen and (max-width: 768px) {
+          width: 10rem;
+        }
+    }
+
+    .intro {
+        text-align: center;
+
+        h1 {
+          margin-top: 2rem;
+          margin-bottom: 0.5rem;
+        }
+    
+        h2 {
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+          font-size: 2.4rem;
+    
+          @media only screen and (max-width: 768px) {
+            font-size: 2rem;
+          }
+        }
+    }
+}
