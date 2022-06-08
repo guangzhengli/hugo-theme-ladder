@@ -1,14 +1,18 @@
-<div id="nav-border" class="container">
-    <nav id="nav" class="nav justify-content-center">
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-        {{ if .Pre }}
-        {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-        {{ $icon }}
-        {{ end }}
-        {{ $text := print .Name | safeHTML }}
-        {{ $text }}
+<nav class="navigation">
+    <section class="container">
+        <a class="navigation-brand" href="{{ .Site.BaseURL | relLangURL }}">
+            {{ .Site.Title }}
         </a>
+        {{ if .Site.Menus.main }}
+        <ul class="navigation-list">
+            {{ with .Site.Menus.main}}
+            {{ range sort . }}
+            <li class="navigation-item">
+                <a class="navigation-link" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{ end }}
+        </ul>
         {{ end }}
-    </nav>
-</div>
+    </section>
+</nav>
