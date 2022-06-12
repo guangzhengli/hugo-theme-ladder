@@ -128,8 +128,21 @@
   #dark-mode {
     padding-right: 0.25rem;
     padding-left: 0.25rem;
-    margin-top: 0.25rem;
+    margin-top: 0.20rem;
     float: right;
+
+    @media only screen and (max-width: 768px) {
+      position: relative;
+      top: 2rem;
+      right: 0;
+      z-index: 5;
+      visibility: hidden;
+      opacity: 0;
+      padding: 0;
+      max-height: 0;
+      width: 100%;
+      transition: opacity 0.25s, max-height 0.15s linear;
+    }
   }
 
   .btn-link {
