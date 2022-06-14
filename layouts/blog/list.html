@@ -2,7 +2,6 @@
 <div class="blog-wrapper">
   <div>
     <article>
-      <h1 class="text-center">{{ .Title }}</h1>
       <div class="text-center">{{ .Content }}</div>
       <div class="card-list">
         {{ $paginator := .Paginate (.Data.Pages) -}}
@@ -10,8 +9,17 @@
         <div class="card">
           <div class="card-body">
             <h2 class="h3"><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h2>
-            <p>{{ .Params.lead | safeHTML }}</p>
-            {{ partial "blog/meta.html" . -}}
+            <p>
+              <small>
+                {{ .PublishDate.Format "January 2, 2006" }}&nbsp;&hyphen;&nbsp;<strong>{{ .ReadingTime -}}&nbsp;min read</strong>
+              </small>
+              <small>
+                {{ range (.GetTerms "tags") }}
+                <small><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></small>
+                {{ end }}
+              </small>
+            <p>
+
           </div>
         </div>
         {{ end -}}
