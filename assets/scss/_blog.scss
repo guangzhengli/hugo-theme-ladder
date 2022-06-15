@@ -1,9 +1,9 @@
 .blog-wrapper {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  position: relative;
 
-  .text-center {
-    text-align: center;
+  .card-list {
+    margin-top: 2.0rem;
   }
 
   .card {
@@ -18,10 +18,7 @@
   .card:hover {
     transform: scale(1.025);
   }
-
 }
 
-.card-list {
-  margin-top: 2.0rem;
-}
+
 

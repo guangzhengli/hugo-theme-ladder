@@ -1,6 +1,10 @@
 .navigation {
   height: 6rem;
+  margin: 1rem auto;
+  max-width: 90rem;
   width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   a,
   span {
@@ -12,7 +16,6 @@
   }
 
   a {
-
     &:hover,
     &:focus {
       color: $link-color;

@@ -1,9 +1,9 @@
 {{ if .Site.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
-    {{ $styles := resources.Get "/sass/main.scss" | resources.ExecuteAsTemplate "main.css" . | toCSS $cssFile }}
+    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 {{ else }}
     {{ $cssFile := (dict "targetPath" "css/main.css" ) }}
-    {{ $styles := resources.Get "/sass/main.scss" | resources.ExecuteAsTemplate "main.css" . | toCSS $cssFile | minify | fingerprint }}
+    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
