@@ -1,1 +1,13 @@
-<p><small>{{ .PublishDate.Format "January 2, 2006" }}&nbsp;&hyphen;&nbsp;<strong>{{ .ReadingTime -}}&nbsp;min read</strong></small><p>
+<p>
+  <small>
+    {{ .PublishDate.Format "January 2, 2006" }}&nbsp;· {{ .ReadingTime -}}&nbsp;min
+  </small>
+  <small>
+    {{ with .GetTerms "tags"}}
+    ·
+    {{ end }}
+    {{ range (.GetTerms "tags") }}
+    <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
+  </small>
+<p>

@@ -1,0 +1,23 @@
+{{ define "content" }}
+<article class="blog-single">
+  <header class="blog-title">
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  {{ partial "blog/meta.html" . }}
+
+  <section class="blog-content">{{ .Content }}</section>
+
+  {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{ if and (gt (len $pages) 1) (in $pages . ) }}
+  <div class="paginator">
+    {{ with $pages.Next . }}
+    <a class="prev" href="{{ .Permalink }}"><span>&larr;</span><span>{{ .Name }}</span></a>
+    {{ end }}
+    {{ with $pages.Prev . }}
+    <a class="next" href="{{ .Permalink }}"><span>{{ .Name }}</span><span>&nbsp;&rarr;</span></a>
+    {{ end }}
+  </div>
+  {{ end }}
+</article>
+{{ end }}
