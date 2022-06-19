@@ -1,25 +1,22 @@
 {{ define "content" }}
-<div class="blog-wrapper">
+<div class="blog-wrapper" xmlns="http://www.w3.org/1999/html">
   <div>
     <div class="card-list">
       {{ range .Paginator.Pages }}
       <article>
         <div class="card">
-          <div class="card-body">
-            <h3><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
-            <p>
-              <small>
-                {{ .PublishDate.Format "January 2, 2006" }}&nbsp;&hyphen;&nbsp;<strong>{{ .ReadingTime -}}&nbsp;min read</strong>
-              </small>
-              <small>
-                {{ range (.GetTerms "tags") }}
-                <small><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></small>
-                {{ end }}
-              </small>
-            <p>
-              {{ .Summary }}
-              <a href="{{ .RelPermalink }}">Read More…</a>
-          </div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+          <p>
+            <small>
+              {{ .PublishDate.Format "January 2, 2006" }}
+            </small>
+            <small>
+              {{ range (.GetTerms "tags") }}
+              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+              {{ end }}
+            </small>
+          <p>
+            {{ .Summary }}
         </div>
       </article>
       {{ end -}}
