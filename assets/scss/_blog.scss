@@ -1,18 +1,17 @@
 .blog-wrapper {
-  margin: 0 auto;
   position: relative;
-
-  .card-list {
-    margin-top: 2.0rem;
-  }
+  max-width: 72rem;
+  margin: auto;
+  padding: 1.5rem;
 
   .card {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    transition: transform 0.3s;
-    padding: 0 2rem 1rem;
-    box-sizing: border-box;
-    border-radius: 0.25rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 0.5rem;
+    transition: transform .1s;
+    border: 1px solid lightgray;
   }
 
   .card:hover {

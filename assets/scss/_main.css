@@ -1,7 +1,16 @@
-.wrapper {
-
+.blog-wrapper {
+    position: relative;
+    max-width: 72rem;
+    margin: auto;
+    padding: 1.5rem;
 }
 
-.content {
-    padding: 3rem 1.5rem;
+.card {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 2rem;
+    transition: transform .1s;
+    border: 1px solid lightgray;
 }
