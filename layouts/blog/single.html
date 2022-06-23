@@ -6,6 +6,10 @@
 
   {{ partial "blog/meta.html" . }}
 
+  <div class="blog-toc">
+    {{ partial "blog/toc.html" . }}
+  </div>
+
   <section class="blog-content">{{ .Content }}</section>
 
   {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}

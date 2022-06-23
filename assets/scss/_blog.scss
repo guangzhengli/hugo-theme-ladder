@@ -29,24 +29,44 @@
   margin: auto;
   padding: 1.5rem;
 
-  .post-title {
-    margin-bottom: 8rem;
+  .blog-toc {
+    // TODO:add sticky on right side
+    //position: -webkit-sticky;
+    //position: sticky;
+    top: 4rem;
+    height: auto;
+    overflow-y: auto;
 
-    p {
-      display: flex;
-      margin-bottom: 1.5rem;
-      font-size: 1.6rem;
-      transform: translateY(0.4rem);
+    ul {
+      padding-left: 0;
+      list-style: none;
     }
 
-    p span::before {
-      content: '·';
-      margin-inline: 0.8rem;
+    li {
+      margin-top: 0.375rem;
+      padding-top: 0.375rem;
     }
 
-    h1 {
-      font-size: 5rem;
-      transform: translateX(-0.3rem);
+    li ul li {
+      border-top: none;
+      padding-left: 1rem;
+      margin-top: 0.125rem;
+      padding-top: 0.125rem;
+    }
+
+    li:not(:first-child) {
+      border-top: 1px dashed $gray-200;
+    }
+
+    a {
+      color: $fg-color;
+      display: block;
+      font-size: 0.90rem;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $fg-color;
     }
   }
 
