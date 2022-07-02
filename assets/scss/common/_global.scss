@@ -168,17 +168,17 @@ code {
   font-size: 1.6rem;
   font-weight: 400;
   background-color: $alt-bg-color;
-  color: $fg-color;
+  color: $font-highlight-color;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
 }
 
 blockquote {
-  border-left: 2px solid $alt-bg-color;
+  border-left: 3px solid $alt-fg-color;
   padding-left: 2rem;
-  line-height: 2.2rem;
   font-weight: 400;
-  font-style: italic;
+  font-size: larger;
+  margin-inline-start: 0;
 }
 
 th,
