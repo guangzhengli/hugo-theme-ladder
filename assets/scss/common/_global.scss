@@ -143,7 +143,7 @@ small {
 .highlight>div,
 .highlight>pre {
   margin: 2rem 0 2rem;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1rem;
 }
 
@@ -155,6 +155,7 @@ pre {
   line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
+  //background-color: $code-bg-color-light;
 
   code {
     display: inline-block;
@@ -165,14 +166,14 @@ pre {
 
 code {
   font-family: $code-font-family;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  background-color: $alt-bg-color;
+  background-color: $font-highlight-bg-color;
   color: $font-highlight-color;
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
 }
-
+// Solarized light github
 blockquote {
   border-left: 3px solid $alt-fg-color;
   padding-left: 2rem;
