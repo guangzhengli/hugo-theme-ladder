@@ -1,0 +1,13 @@
+<div class="home">
+    {{ if .Site.Params.avatarURL }}
+        {{ $avatarURL := resources.Get .Site.Params.avatarURL }}
+        <div class="avatar"><img src="{{ $avatarURL.RelPermalink }}" alt="avatar"></div>
+    {{ end }}
+
+    <div class="intro">
+        {{ .Site.Params.author }}
+        <P>{{ .Site.Params.info }}</P>
+    </div>
+
+</div>
+
