@@ -1,0 +1,23 @@
+.tags {
+  width: 100%;
+
+  .tags-header {
+    text-align: center;
+  }
+
+  .tags-list {
+    width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tags-list li {
+    display: inline-block;
+    font-weight: 500;
+  }
+
+  .tags-list a {
+    display: block;
+    padding: 3px 10px;
+  }
+}
