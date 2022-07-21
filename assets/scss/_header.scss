@@ -1,7 +1,7 @@
 .navigation {
   height: 6rem;
   margin: 1rem auto;
-  max-width: 100rem;
+  max-width: 108rem;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -82,54 +82,54 @@
     }
   }
 
-  .navigation-social {
+  .navigation-right {
+    display: flex;
     float: right;
-    list-style: none;
-    margin-bottom: 0;
-    margin-top: 0.1rem;
 
-    @media only screen and (max-width: 768px) {
-      position: relative;
-      top: 2rem;
-      right: 0;
-      z-index: 5;
-      visibility: hidden;
-      opacity: 0;
-      padding: 0;
-      max-height: 0;
-      width: 100%;
-      background-color: $bg-color;
-      border-top: solid 2px $alt-bg-color;
-      border-bottom: solid 2px $alt-bg-color;
-      transition: opacity 0.25s, max-height 0.15s linear;
-    }
-
-    .navigation-item {
-      float: left;
-      margin: 0;
-      position: relative;
+    .navigation-social {
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 0.2rem;
 
       @media only screen and (max-width: 768px) {
-        float: none !important;
-        text-align: center;
-
-        a,
-        span {
-          line-height: 5rem;
-        }
+        position: relative;
+        top: 2rem;
+        right: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+        width: 100%;
+        background-color: $bg-color;
+        border-top: solid 2px $alt-bg-color;
+        border-bottom: solid 2px $alt-bg-color;
+        transition: opacity 0.25s, max-height 0.15s linear;
       }
 
-      a,
-      span {
-        margin-left: 1rem;
-        margin-right: 1rem;
+      .navigation-item {
+        float: left;
+        a,
+        span {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+          float: none !important;
+          text-align: center;
+          a,
+          span {
+            line-height: 5rem;
+          }
+        }
       }
     }
 
-    #dark-mode {
+    #mode {
       margin-left: 2rem;
-      margin-top: 0.20rem;
       float: right;
+      cursor:pointer;
 
       @media only screen and (max-width: 768px) {
         position: relative;

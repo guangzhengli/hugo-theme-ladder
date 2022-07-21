@@ -1,0 +1,19 @@
+$body-bg-dark: $gray-900;
+$body-overlay-dark: darken($body-bg-dark, 2.5%);
+
+$border-dark: $gray-800;
+$body-color-dark: $gray-300;
+$dots-dark: darken($body-color-dark, 50%);
+
+[data-dark-mode] body .toggle-light {
+  display: block;
+}
+
+[data-dark-mode] body .toggle-dark {
+  display: none;
+}
+
+[data-dark-mode] body {
+  background: $body-bg-dark;
+  color: $body-color-dark;
+}
