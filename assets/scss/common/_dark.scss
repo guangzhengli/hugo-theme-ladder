@@ -17,3 +17,38 @@ $dots-dark: darken($body-color-dark, 50%);
   background: $body-bg-dark;
   color: $body-color-dark;
 }
+
+[data-dark-mode] a {
+  color: $body-color-dark;
+}
+
+[data-dark-mode] a.text-body {
+  color: $body-color-dark;
+}
+
+[data-dark-mode] h1,
+[data-dark-mode] h2,
+[data-dark-mode] h3,
+[data-dark-mode] h4,
+[data-dark-mode] h5,
+[data-dark-mode] h6 {
+  color: $body-color-dark;
+
+  .heading-link {
+    color: $body-color-dark;
+  }
+}
+
+[data-dark-mode] code {
+  background-color: $body-bg-dark;
+  color: $font-highlight-color;
+}
+
+blockquote {
+  border-left: 3px solid $body-color-dark;
+}
+
+table td,
+table th {
+  border: 2px solid $body-bg-dark;
+}
