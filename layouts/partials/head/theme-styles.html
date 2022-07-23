@@ -9,9 +9,9 @@
 {{ end }}
 
 
-<!--{{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}-->
-<!--<link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />-->
+{{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />
 
-<!--{{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}-->
-<!--<script src="{{ $highlightjs.RelPermalink }}"></script>-->
-<!--<script>hljs.highlightAll();</script>-->
+{{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}
+<script src="{{ $highlightjs.RelPermalink }}"></script>
+<script>hljs.highlightAll();</script>

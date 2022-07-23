@@ -145,6 +145,7 @@ small {
   margin: 2rem 0 2rem;
   padding: 2rem;
   border-radius: 1rem;
+  background-color: #0e1116 !important;
 }
 
 pre {
@@ -155,7 +156,6 @@ pre {
   line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
-  //background-color: $code-bg-color-light;
 
   code {
     display: inline-block;
@@ -173,7 +173,7 @@ code {
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
 }
-// Solarized light github
+
 blockquote {
   border-left: 3px solid $alt-fg-color;
   padding-left: 2rem;
