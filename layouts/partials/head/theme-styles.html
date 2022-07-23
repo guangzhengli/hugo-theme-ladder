@@ -7,3 +7,11 @@
     {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
 {{ end }}
+
+
+<!--{{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}-->
+<!--<link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />-->
+
+<!--{{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}-->
+<!--<script src="{{ $highlightjs.RelPermalink }}"></script>-->
+<!--<script>hljs.highlightAll();</script>-->
