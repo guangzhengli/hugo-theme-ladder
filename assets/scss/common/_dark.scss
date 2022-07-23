@@ -5,8 +5,23 @@ $border-dark: $gray-800;
 $body-color-dark: $gray-300;
 $dots-dark: darken($body-color-dark, 50%);
 
+$color-dark-cyan: #84ebd9;
+$color-dark-blue: #6ab0e5;
+$color-dark-purple: #d35af7;
+$color-dark-yellow: #fdec6d;
+$color-dark-pink: #ed6d91;
+$color-dark-pink-200: #dd556a;
+$color-dark-pink-300: #e952a6;
+$color-dark-red: #eb4344;
+$color-dark-orange: #f1964f;
+
 [data-dark-mode] body .toggle-light {
   display: block;
+  color: $body-color-dark;
+}
+
+[data-dark-mode] body .toggle-light:hover {
+  color: $color-dark-yellow;
 }
 
 [data-dark-mode] body .toggle-dark {
@@ -18,11 +33,18 @@ $dots-dark: darken($body-color-dark, 50%);
   color: $body-color-dark;
 }
 
-[data-dark-mode] a {
+[data-dark-mode] body a {
   color: $body-color-dark;
 }
 
-[data-dark-mode] a.text-body {
+[data-dark-mode] body a.text-body {
+  color: $body-color-dark;
+}
+
+[data-dark-mode] body .navigation-link:hover,
+[data-dark-mode] body .navigation-link:focus,
+[data-dark-mode] body .navigation-brand:hover,
+[data-dark-mode] body .navigation-brand:focus {
   color: $body-color-dark;
 }
 
@@ -51,4 +73,14 @@ blockquote {
 table td,
 table th {
   border: 2px solid $body-bg-dark;
+}
+
+[data-dark-mode] body .card {
+  background: $body-bg-dark;
+}
+
+[data-dark-mode] body .blog-toc {
+  a:hover {
+    color: $body-color-dark;
+  }
 }
