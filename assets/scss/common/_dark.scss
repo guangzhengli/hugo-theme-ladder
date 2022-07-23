@@ -1,4 +1,4 @@
-$body-bg-dark: $gray-900;
+$body-bg-dark: #181a1b;
 $body-overlay-dark: darken($body-bg-dark, 2.5%);
 
 $border-dark: $gray-800;
@@ -14,6 +14,8 @@ $color-dark-pink-200: #dd556a;
 $color-dark-pink-300: #e952a6;
 $color-dark-red: #eb4344;
 $color-dark-orange: #f1964f;
+$color-dark-code-bg: #202020;
+
 
 [data-dark-mode] body .toggle-light {
   display: block;
@@ -62,8 +64,21 @@ $color-dark-orange: #f1964f;
 }
 
 [data-dark-mode] code {
-  background-color: $body-bg-dark;
-  color: $font-highlight-color;
+  background-color: $color-dark-code-bg;
+}
+
+[data-dark-mode] .highlight>pre,
+[data-dark-mode] .highlight>div {
+  background-color: $color-dark-code-bg !important;
+}
+
+[data-dark-mode] pre {
+
+  code {
+    display: inline-block;
+    background-color: $color-dark-code-bg;
+    color: inherit;
+  }
 }
 
 blockquote {
