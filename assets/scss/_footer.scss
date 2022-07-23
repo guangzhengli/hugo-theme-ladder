@@ -8,3 +8,37 @@
   font-size: 80%;
   margin-top: auto;
 }
+
+.top-link {
+  visibility: hidden;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  z-index: 99;
+  background: $gray-500;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.6rem;
+  border-radius: 4rem;
+  transition: visibility 0.5s, opacity 0.8s linear;
+}
+
+.top-link,
+.top-link svg {
+  filter: drop-shadow(0px 0px 0px $fg-color);
+}
+
+.footer a:hover,
+.top-link:hover {
+  color: $fg-color;
+}
+
+.top-link:focus,
+#theme-toggle:focus {
+  outline: 0;
+}
+
+.top-link {
+  font-size: 80%;
+  color: $fg-color;
+}
