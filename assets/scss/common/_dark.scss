@@ -82,7 +82,7 @@ $color-dark-code-bg: #202020;
 }
 
 blockquote {
-  border-left: 3px solid $body-color-dark;
+  border-left: 3px solid $body-color-dark !important;
 }
 
 table td,
