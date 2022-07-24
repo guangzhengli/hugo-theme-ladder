@@ -99,3 +99,17 @@ table th {
     color: $body-color-dark;
   }
 }
+
+
+[data-dark-mode] .top-link {
+  background: $border-dark;
+}
+
+[data-dark-mode] .top-link svg {
+  color: $body-color-dark;
+}
+
+[data-dark-mode] .footer a:hover,
+[data-dark-mode] .top-link:hover {
+  background: $body-overlay-dark;
+}
