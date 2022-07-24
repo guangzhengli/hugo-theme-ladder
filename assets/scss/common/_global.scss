@@ -145,7 +145,7 @@ small {
   margin: 2rem 0 2rem;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: #0e1116 !important;
+  background-color: $code-bg-color-dark !important;
 }
 
 pre {
@@ -156,12 +156,40 @@ pre {
   line-height: 2.6rem;
   overflow-x: auto;
   margin: 0;
+  position: relative;
 
   code {
     display: inline-block;
     background-color: inherit;
     color: inherit;
   }
+
+  .copy-code {
+    display: none;
+    padding: 1rem;
+    position:absolute;
+    right:0;
+    top: 1rem;
+    margin-right: 1rem;
+    color: $bg-color;
+    background: $code-copy-button;
+    user-select: none;
+    border: 0;
+    border-radius: 0.5rem;
+  }
+}
+
+.copy-code:hover,
+.copy-code:focus,
+.copy-code:active {
+  background: darken($code-copy-button, 5%);
+  cursor: pointer;
+}
+
+
+div.highlight:hover .copy-code,
+pre:hover .copy-code {
+  display: block;
 }
 
 code {
