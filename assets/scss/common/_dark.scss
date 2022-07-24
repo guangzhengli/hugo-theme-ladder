@@ -100,7 +100,6 @@ table th {
   }
 }
 
-
 [data-dark-mode] .top-link {
   background: $border-dark;
 }
@@ -112,4 +111,10 @@ table th {
 [data-dark-mode] .footer a:hover,
 [data-dark-mode] .top-link:hover {
   background: $body-overlay-dark;
+}
+
+[data-dark-mode] .archive-count,
+[data-dark-mode] .archive-meta {
+  color: $gray-300;
+  font-size: 1.5rem;
 }
