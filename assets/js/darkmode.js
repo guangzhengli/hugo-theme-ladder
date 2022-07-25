@@ -23,7 +23,6 @@ if (mode !== null) {
   } else {
     document.documentElement.removeAttribute('data-dark-mode');
   }
-  changeCommentsTheme();
 }
 
 function changeCommentsTheme () {
