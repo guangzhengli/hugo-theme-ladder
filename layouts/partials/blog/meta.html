@@ -1,6 +1,6 @@
 <p>
   <small>
-    {{ .PublishDate.Format "January 2, 2006" }}&nbsp;· {{ .ReadingTime -}}&nbsp;min
+    {{ .Date | time.Format ":date_long" }}&nbsp;· {{ i18n "reading_time" .ReadingTime -}}
   </small>
   <small>
     {{ with .GetTerms "tags"}}

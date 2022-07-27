@@ -15,7 +15,7 @@ one = "系列文章"
 other = "系列文章"
 
 [reading_time]
-
+one = "1 分钟"
 other = "{{ .Count }} 分钟"
 
 [related_resources]
