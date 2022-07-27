@@ -23,6 +23,8 @@
     {{ end }}
   </div>
   {{ end }}
+
+  {{ partial "blog/series.html" . }}
 </article>
 
 {{ if .Site.Params.comments.enable }}

@@ -1,0 +1,24 @@
+{{ $currentPageUrl := .RelPermalink }}
+{{ if .Params.series }}
+<div class="related-resources">
+  <h3>Related Resources</h3>
+  {{ range .Params.series }}
+    {{ $name := . | urlize }}
+    {{ $series := index $.Site.Taxonomies.series $name }}
+    {{ if gt (len $series.Pages) 1 }}
+      <nav>
+        <ul>
+        {{ $maxItems := $.Site.Params.maxRelatedResources | default 10 }}
+        {{ range first (add $maxItems 1) $series.Pages }}
+          {{ if ne .RelPermalink $currentPageUrl }}
+            <li>
+              <a href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+        </ul>
+      </nav>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}
