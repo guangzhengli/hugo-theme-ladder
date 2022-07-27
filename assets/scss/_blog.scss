@@ -69,9 +69,20 @@
     }
   }
 
+  .paginator {
+    margin-top: 3rem;
+    height: 3rem;
+  }
+
   .paginator .next {
     float: right;
   }
+
+  .related-resources {
+    margin-top: 3rem;
+    border-top: 1px solid $fg-color;
+  }
+
 }
 
 .blog-content {
@@ -81,7 +92,7 @@
 }
 
 .utterances {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 
