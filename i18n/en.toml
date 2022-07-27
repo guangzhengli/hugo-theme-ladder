@@ -1,0 +1,22 @@
+[blog]
+one = "blog"
+other = "blog"
+
+[tags]
+one = "tag"
+other = "tags"
+
+[archive]
+one = "archive"
+other = "archive"
+
+[series]
+one = "series"
+other = "series"
+
+[reading_time]
+one = "One minute"
+other = "{{ .Count }} min"
+
+[related_resources]
+other = "Related Resources"
