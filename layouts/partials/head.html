@@ -1,4 +1,38 @@
 <head>
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{ partial "head/theme-styles.html" . }}
+
+    {{- /* Meta */}}
+    {{- if .IsHome }}
+    {{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+    {{- else }}
+    <meta name="keywords" content="{{ if .Params.keywords -}}
+    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
+    {{- end }}
+    <meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
+    {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
+    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+    <meta name="author" content="{{ site.Params.author }}">
+    <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+    {{- if site.Params.analytics.google.SiteVerificationTag }}
+    <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
+    {{- end }}
+
+    {{ if .Site.IsServer }}
+    {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
+    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+    {{ else }}
+    {{ $cssFile := (dict "targetPath" "css/main.css" ) }}
+    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+    {{ end }}
+
+
+    {{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />
+
+    {{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}
+    <script src="{{ $highlightjs.RelPermalink }}"></script>
+    <script>hljs.highlightAll();</script>
 </head>
