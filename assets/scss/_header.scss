@@ -150,12 +150,16 @@
       margin-left: 2rem;
 
       @media only screen and (max-width: 768px) {
-        border-top: 2px solid $fg-color;
-        margin: 0 8rem;
-
-        span {
-          display: none;
-        }
+        position: relative;
+        top: 2rem;
+        right: 0;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0;
+        max-height: 0;
+        width: 100%;
+        transition: opacity 0.25s, max-height 0.15s linear;
       }
     }
   }
