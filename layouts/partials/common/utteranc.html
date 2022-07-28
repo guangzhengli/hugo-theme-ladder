@@ -1,0 +1,19 @@
+{{ if .Site.Params.comments.enable }}
+<div class="comments">
+  <script>
+      const getTheme = window.localStorage && window.localStorage.getItem("theme");
+      // getTheme = getTheme == null ? '{{$.Site.Params.defaultTheme}}' : getTheme;
+
+      let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+      let s = document.createElement('script');
+      s.src = 'https://utteranc.es/client.js';
+      s.setAttribute('repo', '{{ .Site.Params.comments.repo }}');
+      s.setAttribute('issue-term', '{{ .Site.Params.comments.issueTerm }}');
+      s.setAttribute('theme', theme);
+      s.setAttribute('crossorigin', 'anonymous');
+      s.setAttribute('async', '');
+      document.querySelector('div.comments').innerHTML = '';
+      document.querySelector('div.comments').appendChild(s);
+  </script>
+</div>
+{{ end }}
