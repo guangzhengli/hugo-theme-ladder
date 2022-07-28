@@ -20,11 +20,11 @@
 
     {{ if .Site.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
-    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile }}
+    {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
     {{ else }}
     {{ $cssFile := (dict "targetPath" "css/main.css" ) }}
-    {{ $styles := resources.Get "/scss/app.scss" | resources.ExecuteAsTemplate "app.css" . | toCSS $cssFile | minify | fingerprint }}
+    {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
