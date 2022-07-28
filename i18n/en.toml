@@ -18,5 +18,9 @@ other = "series"
 one = "One minute"
 other = "{{ .Count }} min"
 
+[word_count]
+one = "one word"
+other = "{{ .Count }} words"
+
 [related_resources]
 other = "Related Resources"
