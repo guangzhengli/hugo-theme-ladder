@@ -89,6 +89,11 @@
   p img {
     border-radius: 0.6rem;
   }
+
+  a {
+    box-shadow: 0 1px;
+    text-decoration: none;
+  }
 }
 
 .utterances {

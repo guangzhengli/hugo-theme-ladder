@@ -7,6 +7,7 @@ $dots-dark: darken($body-color-dark, 50%);
 
 $color-dark-cyan: #84ebd9;
 $color-dark-blue: #6ab0e5;
+$color-dark-blue-200: #1565c0;
 $color-dark-purple: #d35af7;
 $color-dark-yellow: #fdec6d;
 $color-dark-pink: #ed6d91;
@@ -81,7 +82,7 @@ $color-dark-code-bg: #202020;
   }
 }
 
-blockquote {
+[data-dark-mode] blockquote {
   border-left: 3px solid $body-color-dark !important;
 }
 
@@ -126,4 +127,12 @@ table th {
 
 [data-dark-mode] body .language-item a:hover {
   color: $body-color-dark;
+}
+
+[data-dark-mode] .blog-content {
+  a {
+    box-shadow: 0 0;
+    text-decoration: none;
+    color: $color-dark-blue;
+  }
 }
