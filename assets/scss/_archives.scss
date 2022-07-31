@@ -9,6 +9,10 @@
         width: 60rem;
         margin-left: auto;
         margin-right: auto;
+
+        @media only screen and (max-width: 768px) {
+            width: 35rem;
+        }
     }
 }
 
@@ -26,6 +30,10 @@
     align-items: flex-start;
     margin-top: -1.5rem;
     margin-bottom: -1.5rem;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .archive-month-header {
@@ -37,6 +45,11 @@
     position: relative;
     padding: 1rem;
     margin: 1rem 0;
+
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .archive-entry-title {
