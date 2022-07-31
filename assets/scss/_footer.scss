@@ -21,6 +21,10 @@
   padding: 0.75rem;
   border-radius: 4rem;
   transition: visibility 0.5s, opacity 0.8s linear;
+
+  @media only screen and (max-width: 768px) {
+    right: 2rem;
+  }
 }
 
 .footer a:hover,

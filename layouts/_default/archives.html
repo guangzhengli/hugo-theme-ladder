@@ -1,9 +1,6 @@
 {{- define "content" }}
 
 <div class="archive">
-  <header class="archive-header">
-    <h1>{{ .Title }}</h1>
-  </header>
 
 <div class="archive-content">
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
