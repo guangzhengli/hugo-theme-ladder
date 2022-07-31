@@ -9,12 +9,20 @@
     width: 80rem;
     margin-left: auto;
     margin-right: auto;
+
+    @media only screen and (max-width: 768px) {
+      width: 35rem;
+    }
   }
 
   .tags-list li {
     display: inline-block;
     font-weight: 500;
     margin-top: 3rem;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 1rem;
+    }
   }
 
   .tags-list a {
