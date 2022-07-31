@@ -48,6 +48,10 @@
     margin-bottom: 0;
     margin-top: 0;
 
+    @media only screen and (max-width: 768px) {
+      padding-left: 1rem;
+    }
+
     .navigation-item {
       float: left;
       margin: 0;
@@ -114,19 +118,6 @@
       margin-left: 1rem;
       float: right;
       cursor:pointer;
-
-      @media only screen and (max-width: 768px) {
-        position: relative;
-        top: 2rem;
-        right: 0;
-        z-index: 5;
-        visibility: hidden;
-        opacity: 0;
-        padding: 0;
-        max-height: 0;
-        width: 100%;
-        transition: opacity 0.25s, max-height 0.15s linear;
-      }
     }
 
     .language-item {
@@ -134,16 +125,7 @@
       margin-left: 2rem;
 
       @media only screen and (max-width: 768px) {
-        position: relative;
-        top: 2rem;
-        right: 0;
-        z-index: 5;
-        visibility: hidden;
-        opacity: 0;
-        padding: 0;
-        max-height: 0;
-        width: 100%;
-        transition: opacity 0.25s, max-height 0.15s linear;
+        margin-left: 0.5rem;
       }
     }
   }
