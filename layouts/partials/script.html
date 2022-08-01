@@ -19,8 +19,8 @@
 {{ $slice := slice $app -}}
 
 {{ if .Site.Params.options.showDarkMode -}}
-  {{ $darkMode := resources.Get "js/darkmode.js" -}}
-  {{ $darkMode := $darkMode | js.Build -}}
+  {{ $darkModeTheme := .Site.Params.options.darkThemes}}
+  {{ $darkMode := resources.Get "js/darkmode.js" | js.Build (dict "params" (dict "darkModeTheme" site.Params.darkModeTheme)) }}
   {{ $slice = $slice | append $darkMode -}}
 {{ end -}}
 
