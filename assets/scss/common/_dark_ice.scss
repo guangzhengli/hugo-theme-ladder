@@ -1,0 +1,149 @@
+$body-bg-dark: #181a1b;
+$body-overlay-dark: darken($body-bg-dark, 2.5%);
+
+$border-dark: $gray-800;
+$body-color-dark: $gray-300;
+$dots-dark: darken($body-color-dark, 50%);
+
+$color-dark-line: #1f434c;
+$color-dark-card-bg: #10262b;
+$color-dark-cyan: #84ebd9;
+$color-dark-blue: #6ab0e5;
+$color-dark-blue-200: #1565c0;
+$color-dark-purple: #d35af7;
+$color-dark-yellow: #fdec6d;
+$color-dark-pink: #ed6d91;
+$color-dark-pink-200: #dd556a;
+$color-dark-pink-300: #e952a6;
+$color-dark-red: #eb4344;
+$color-dark-orange: #f1964f;
+$color-dark-code-bg: #202020;
+
+
+[icy-dark-mode] body .toggle-light {
+  display: block;
+  color: $color-dark-yellow;
+}
+
+[icy-dark-mode] body .toggle-dark {
+  display: none;
+}
+
+[icy-dark-mode] body {
+  background: $color-dark-line;
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] body a {
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] body a.text-body {
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] body .navigation-link:hover,
+[icy-dark-mode] body .navigation-link:focus,
+[icy-dark-mode] body .navigation-brand:hover,
+[icy-dark-mode] body .navigation-brand:focus {
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] h1,
+[icy-dark-mode] h2,
+[icy-dark-mode] h3,
+[icy-dark-mode] h4,
+[icy-dark-mode] h5,
+[icy-dark-mode] h6 {
+  color: $body-color-dark;
+
+  .heading-link {
+    color: $body-color-dark;
+  }
+}
+
+[icy-dark-mode] code {
+  background-color: $color-dark-code-bg;
+}
+
+[icy-dark-mode] .highlight>pre,
+[icy-dark-mode] .highlight>div {
+  background-color: $color-dark-code-bg !important;
+}
+
+[icy-dark-mode] pre {
+
+  code {
+    display: inline-block;
+    background-color: $color-dark-code-bg;
+    color: inherit;
+  }
+}
+
+[icy-dark-mode] blockquote {
+  border-left: 3px solid $body-color-dark !important;
+}
+
+table td,
+table th {
+  border: 2px solid $body-bg-dark;
+}
+
+[icy-dark-mode] body .card {
+  background: $color-dark-card-bg;
+  border: 1px solid $color-dark-line;
+
+  h3 a {
+    color: $color-dark-cyan;
+  }
+
+  p small {
+    color: $color-dark-cyan
+  }
+
+  p small a {
+    color: $color-dark-cyan
+  }
+}
+
+[icy-dark-mode] body .blog-toc {
+  a:hover {
+    color: $body-color-dark;
+  }
+}
+
+[icy-dark-mode] .top-link {
+  background: $border-dark;
+}
+
+[icy-dark-mode] .top-link svg {
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] .footer a:hover,
+[icy-dark-mode] .top-link:hover {
+  background: $body-overlay-dark;
+}
+
+[icy-dark-mode] .archive-count,
+[icy-dark-mode] .archive-meta {
+  color: $gray-300;
+  font-size: 1.5rem;
+}
+
+
+[icy-dark-mode] .blog-single .related-resources {
+  border-top: 1px solid $body-color-dark;
+}
+
+[icy-dark-mode] body .language-item a:hover {
+  color: $body-color-dark;
+}
+
+[icy-dark-mode] .blog-content {
+  a {
+    box-shadow: 0 0;
+    text-decoration: none;
+    color: $color-dark-blue;
+  }
+}
