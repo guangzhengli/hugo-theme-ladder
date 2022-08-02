@@ -22,7 +22,7 @@ $color-dark-code-bg: #202020;
 
 [icy-dark-mode] body .toggle-light {
   display: block;
-  color: $color-dark-yellow;
+  color: $color-dark-cyan;
 }
 
 [icy-dark-mode] body .toggle-dark {
@@ -147,3 +147,11 @@ table th {
     color: $color-dark-blue;
   }
 }
+
+[icy-dark-mode] body .navigation-item a,
+[icy-dark-mode] body .navigation-brand,
+[icy-dark-mode] body .language-item a,
+{
+  color: $color-dark-cyan;
+}
+
