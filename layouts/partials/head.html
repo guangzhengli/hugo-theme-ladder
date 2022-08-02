@@ -14,6 +14,7 @@
 
     {{ partial "common/analytics.html" . }}
     {{ partial "common/extensions.html" . }}
+    {{ partial "common/icon.html" . }}
 
     {{ if .Site.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}

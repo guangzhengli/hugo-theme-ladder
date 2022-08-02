@@ -1,7 +1,8 @@
 <div class="home">
     {{ if .Site.Params.avatarURL }}
-        {{ $avatarURL := resources.Get .Site.Params.avatarURL }}
-        <div class="avatar"><img src="{{ $avatarURL.RelPermalink }}" alt="avatar"></div>
+        {{ with .Site.Params.avatarURL }}
+            <div class="avatar"><img src="{{ . | relURL }}" alt="avatar"></div>
+        {{ end }}
     {{ end }}
 
     <div class="intro">
