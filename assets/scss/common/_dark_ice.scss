@@ -150,3 +150,12 @@ $color-dark-code-bg: #202020;
   color: $color-dark-cyan;
 }
 
+[icy-dark-mode] .navigation .navigation-list {
+  .navigation-item:hover {
+    background: $color-dark-card-bg;
+  }
+}
+
+[icy-dark-mode] .tags .tags-list a {
+  background: $color-dark-card-bg;
+}
