@@ -6,16 +6,9 @@
 
   .card {
     position: relative;
-    margin-bottom: 1.5rem;
-    padding: 0.5rem 1.5rem 0 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
     background: white;
-    border-radius: 0.5rem;
-    transition: transform .1s;
-    border: 1px solid lightgray;
-  }
-
-  .card:hover {
-    transform: scale(1.025);
+    border-bottom: 1px dashed $gray-600;
   }
 
   .paginator .next {
@@ -30,9 +23,6 @@
   padding: 1.5rem;
 
   .blog-toc {
-    // TODO:add sticky on right side
-    //position: -webkit-sticky;
-    //position: sticky;
     top: 4rem;
     height: auto;
     overflow-y: auto;
