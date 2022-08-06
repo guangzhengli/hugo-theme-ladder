@@ -84,11 +84,6 @@ $color-dark-code-bg: #202020;
   border-left: 3px solid $body-color-dark !important;
 }
 
-table td,
-table th {
-  border: 2px solid $body-bg-dark;
-}
-
 [icy-dark-mode] body .card {
   background: $color-dark-card-bg;
   border: 1px solid $color-dark-line;

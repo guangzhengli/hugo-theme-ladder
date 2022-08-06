@@ -210,36 +210,26 @@ blockquote {
   margin-inline-start: 0;
 }
 
-th,
-td {
-  padding: 1.6rem;
-}
-
 table {
+  width: 100%;
   border-collapse: collapse;
+  border-spacing: 0;
+  overflow-x: auto;
+  word-break: keep-all;
+  margin: 0 auto 3rem auto;
 }
 
-table td,
+table th,
+table:not(.highlighttable, .highlight table, .gist .highlight) td {
+  padding: 1rem 1rem;
+  line-height: 1.5;
+  border-bottom: 1px dashed $gray-400;
+}
+
 table th {
-  border: 2px solid $gray-400;
-}
-
-table tr:first-child th {
-  border-top: 0;
-}
-
-table tr:last-child td {
-  border-bottom: 0;
-}
-
-table tr td:first-child,
-table tr th:first-child {
-  border-left: 0;
-}
-
-table tr td:last-child,
-table tr th:last-child {
-  border-right: 0;
+  font-size: 1.5rem;
+  text-align: start;
+  border-bottom: 1px solid $gray-400;
 }
 
 img {
