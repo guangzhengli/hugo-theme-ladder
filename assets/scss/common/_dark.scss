@@ -136,3 +136,13 @@ table th {
     color: $color-dark-blue;
   }
 }
+
+[data-dark-mode] .navigation .navigation-list {
+  .navigation-item:hover {
+    background: $gray-800;
+  }
+}
+
+[data-dark-mode] .tags .tags-list a {
+  background: $gray-800;
+}

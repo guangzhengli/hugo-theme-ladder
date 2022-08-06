@@ -7,8 +7,8 @@
   padding-right: 2rem;
 
   @media only screen and (max-width: 768px) {
-    padding-left: 1rem;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     height: 3rem;
   }
 
@@ -24,7 +24,7 @@
   a {
     &:hover,
     &:focus {
-      color: $link-color;
+      text-decoration: none;
     }
   }
 
@@ -34,7 +34,7 @@
 
     &:hover,
     &:focus {
-      color: $link-color;
+      text-decoration: none;
     }
   }
 
@@ -50,7 +50,8 @@
     margin-top: 0;
 
     @media only screen and (max-width: 768px) {
-      padding-left: 1rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
     }
 
     .navigation-item {
@@ -60,14 +61,19 @@
 
       a,
       span {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
 
         @media only screen and (max-width: 768px) {
-          margin-left: 1rem;
-          margin-right: 0;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
         }
       }
+    }
+
+    .navigation-item:hover {
+      background: $gray-200;
+      border-radius: 0.5rem;
     }
   }
 

@@ -16,6 +16,8 @@
     display: inline-block;
     font-weight: 500;
     margin-top: 3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
     @media only screen and (max-width: 768px) {
       padding: 1rem;
@@ -26,5 +28,8 @@
   .tags-list a {
     display: block;
     padding: 3px 10px;
+    background: $gray-200;
+    border-radius: 0.5rem;
+    text-decoration: none;
   }
 }
