@@ -62,6 +62,12 @@
 
     }
   }
+  .featured {
+    margin-left: 2rem;
 
-
+    .featured-single {
+      border-top: 1px dashed $gray-600;
+    }
+  }
 }
+

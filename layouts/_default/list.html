@@ -1,27 +1,27 @@
 {{ define "content" }}
-<div class="blog-wrapper" xmlns="http://www.w3.org/1999/html">
+<div class="blog-wrapper">
   <div>
     <div class="card-list">
       {{ range .Paginator.Pages }}
       <article>
         <div class="card">
           <h3><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
-          <p>
-            <small>
-              {{ .PublishDate.Format "January 2, 2006" }}
-            </small>
-            <small>
-              {{ range (.GetTerms "tags") }}
-              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-              {{ end }}
-            </small>
-          <p>
-            {{ .Summary }}
+          {{ partial "blog/meta.html" . }}
+          {{ .Summary }}
         </div>
       </article>
       {{ end -}}
-      {{ template "_internal/pagination.html" . }}
     </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+    <div class="paginator">
+      {{ if .Paginator.HasPrev }}
+      <a class="prev" href="{{ .Paginator.Prev.URL }}">&larr;&nbsp;&nbsp;Pre Page</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+      <a class="next" href="{{ .Paginator.Next.URL }}">Next Page&nbsp;&nbsp;&rarr;</a>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </div>
 {{ end }}

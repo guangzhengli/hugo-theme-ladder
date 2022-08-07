@@ -6,18 +6,26 @@
 
   {{ partial "blog/meta.html" . }}
 
+  <div class="blog-toc">
+    {{ partial "blog/toc.html" . }}
+  </div>
+
   <section class="blog-content">{{ .Content }}</section>
 
   {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
   {{ if and (gt (len $pages) 1) (in $pages . ) }}
   <div class="paginator">
     {{ with $pages.Next . }}
-    <a class="prev" href="{{ .Permalink }}"><span>&larr;</span><span>{{ .Name }}</span></a>
+    <a class="prev" href="{{ .Permalink }}"><span>&larr;&nbsp;&nbsp;</span><span>{{ .Name }}</span></a>
     {{ end }}
     {{ with $pages.Prev . }}
-    <a class="next" href="{{ .Permalink }}"><span>{{ .Name }}</span><span>&nbsp;&rarr;</span></a>
+    <a class="next" href="{{ .Permalink }}"><span>{{ .Name }}</span><span>&nbsp;&nbsp;&rarr;</span></a>
     {{ end }}
   </div>
   {{ end }}
+
+  {{ partial "blog/series.html" . }}
 </article>
+
+{{ partial "common/utteranc.html" . }}
 {{ end }}
