@@ -1,22 +1,67 @@
 .home {
   width: 100%;
+  height: 100%;
+  max-width: 80rem;
+  margin: 1rem auto;
 
-  .avatar img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15rem;
-    display: block;
+  .info {
+    display: flex;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 
     @media only screen and (max-width: 768px) {
-      margin-top: 5rem;
+      display: block;
+    }
+
+    .intro {
+      margin-top: 0.5rem;
+      float: left;
+      height: 20rem;
+      width: 70%;
+
+      h1 {
+        margin-bottom: 0;
+        font-size: 4.2rem;
+        line-height: 4.6rem;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+          margin-top: 0;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+        float: none;
+        width: 100%;
+        height: 10rem;
+      }
+    }
+
+    .avatar {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 15rem;
+        border-radius: 50%;
+
+        @media only screen and (max-width: 768px) {
+          margin-top: 2rem;
+          height: 10rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-top: 2rem;
+      }
+
     }
   }
 
-  .intro {
-    margin-top: 2rem;
-    text-align: center;
-  }
+
 }
