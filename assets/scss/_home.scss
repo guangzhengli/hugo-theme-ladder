@@ -67,6 +67,14 @@
 
     .featured-single {
       border-top: 1px dashed $gray-600;
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      p {
+        margin-top: 0;
+      }
     }
   }
 }

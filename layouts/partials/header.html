@@ -1,7 +1,7 @@
 <nav class="navigation">
     <section class="container">
         <a class="navigation-brand" href="{{ .Site.BaseURL | relLangURL }}">
-            {{ .Site.Title }}
+            {{ .Site.Params.brand }}
         </a>
         {{ if .Site.Menus.main }}
         <ul class="navigation-list">

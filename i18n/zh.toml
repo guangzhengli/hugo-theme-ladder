@@ -25,3 +25,7 @@ other = "{{ .Count }} 字"
 [related_resources]
 one = "相关系列文章推荐"
 other = "相关系列文章推荐"
+
+[featured_posts]
+one = "推荐阅读"
+other = "推荐阅读"

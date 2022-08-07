@@ -1,7 +1,7 @@
 {{ $currentPageUrl := .RelPermalink }}
 {{ if .Params.series }}
 <div class="related-resources">
-  <h3>Related Resources</h3>
+  <h3>{{- i18n "related_resources" -}}</h3>
   {{ range .Params.series }}
     {{ $name := . | urlize }}
     {{ $series := index $.Site.Taxonomies.series $name }}
