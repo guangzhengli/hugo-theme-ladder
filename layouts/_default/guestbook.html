@@ -1,7 +1,7 @@
 {{ define "content" }}
 <div class="guestbook">
-  <h1>Guestbook</h1>
-  <p>Leave a comment below. It could be anything – appreciation, information, wisdom, or even humor. Surprise me!</p>
+  <h1>{{ .Site.Params.guestbook.title }}</h1>
+  <p>{{ .Site.Params.guestbook.description }}</p>
   {{ partial "common/utteranc.html" . }}
   {{ partial "common/giscus.html" . }}
 </div>
