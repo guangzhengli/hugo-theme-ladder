@@ -1,0 +1,6 @@
+<p>
+<details class="toggle">
+  <summary markdown="span">{{ .Get "summary" | default "Toggle" | markdownify }}</summary>
+  {{ .Inner | markdownify }}
+</details>
+</p>
