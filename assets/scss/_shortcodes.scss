@@ -1,3 +1,18 @@
+figure {
+  text-align: center;
+}
+
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 0 !important;
+  max-width: 40rem !important;
+}
+
+.toggle:hover {
+  cursor: pointer
+}
+
 .tabs {
   display: flex;
   flex-wrap: wrap;
@@ -76,5 +91,21 @@
   .tab-content {
     background-color: $gray-900;
     border-color: $body-bg-dark;
+  }
+}
+
+[icy-dark-mode] .tabs {
+  label.tab-label {
+    background-color: $color-dark-line;
+    border-color: $color-dark-cyan;
+  }
+
+  input.tab-input:checked + label.tab-label {
+    background-color: $color-dark-card-bg;
+  }
+
+  .tab-content {
+    background-color: $color-dark-line;
+    border-color: $color-dark-cyan;
   }
 }
