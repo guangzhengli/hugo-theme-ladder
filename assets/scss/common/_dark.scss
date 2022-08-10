@@ -18,16 +18,16 @@ $color-dark-orange: #f1964f;
 $color-dark-code-bg: #202020;
 
 
-[data-dark-mode] body .toggle-light {
+[data-dark-mode] body .navigation .navigation-list .navigation-dark .toggle-light {
   display: block;
   color: $body-color-dark;
 }
 
-[data-dark-mode] body .toggle-light:hover {
+[data-dark-mode] body .navigation .navigation-list .navigation-dark .toggle-light:hover {
   color: $color-dark-yellow;
 }
 
-[data-dark-mode] body .toggle-dark {
+[data-dark-mode] body .navigation .navigation-list .navigation-dark .toggle-dark {
   display: none;
 }
 
@@ -133,8 +133,12 @@ $color-dark-code-bg: #202020;
 }
 
 [data-dark-mode] .navigation .navigation-list {
-  .navigation-item:hover {
+  .navigation-menu:hover {
     background: $gray-800;
+  }
+
+  .menu-separator span {
+    color: $gray-200;
   }
 }
 
