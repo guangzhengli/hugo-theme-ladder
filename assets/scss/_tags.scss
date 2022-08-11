@@ -7,8 +7,7 @@
     margin-right: auto;
 
     @media only screen and (max-width: 768px) {
-      width: 20rem;
-      margin-top: 0;
+      width: 100%;
     }
   }
 
@@ -20,8 +19,7 @@
     margin-right: 0.5rem;
 
     @media only screen and (max-width: 768px) {
-      padding: 1rem;
-      display: inline;
+      margin-top: 1rem;
     }
   }
 
