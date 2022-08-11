@@ -19,13 +19,12 @@ $color-dark-red: #eb4344;
 $color-dark-orange: #f1964f;
 $color-dark-code-bg: #202020;
 
-
-[icy-dark-mode] body .toggle-light {
+[icy-dark-mode] body .navigation .navigation-list .navigation-dark .toggle-light {
   display: block;
   color: $color-dark-cyan;
 }
 
-[icy-dark-mode] body .toggle-dark {
+[icy-dark-mode] body .navigation .navigation-list .navigation-dark .toggle-dark {
   display: none;
 }
 
@@ -153,6 +152,32 @@ $color-dark-code-bg: #202020;
 [icy-dark-mode] .navigation .navigation-list {
   .navigation-item:hover {
     background: $color-dark-card-bg;
+  }
+}
+
+[icy-dark-mode] .navigation .navigation-list {
+
+  @media only screen and (max-width: 768px) {
+    background-color: $color-dark-line;
+    border-top: solid 2px $color-dark-cyan;
+    border-bottom: solid 2px $color-dark-cyan;
+  }
+
+  .navigation-menu:hover {
+    background: $color-dark-cyan;
+  }
+
+  .menu-separator span {
+    color: $gray-200;
+  }
+}
+
+[icy-dark-mode] .navigation .menu-button {
+  @media only screen and (max-width: 768px) {
+
+    span {
+      background: $color-dark-cyan;
+    }
   }
 }
 
