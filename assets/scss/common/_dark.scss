@@ -133,12 +133,28 @@ $color-dark-code-bg: #202020;
 }
 
 [data-dark-mode] .navigation .navigation-list {
+
+  @media only screen and (max-width: 768px) {
+    background-color: $body-bg-dark;
+    border-top: solid 2px $gray-600;
+    border-bottom: solid 2px $gray-600;
+  }
+
   .navigation-menu:hover {
     background: $gray-800;
   }
 
   .menu-separator span {
     color: $gray-200;
+  }
+}
+
+[data-dark-mode] .navigation .menu-button {
+  @media only screen and (max-width: 768px) {
+
+    span {
+      background: $body-color-dark;
+    }
   }
 }
 

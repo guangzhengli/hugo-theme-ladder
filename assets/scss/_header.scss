@@ -54,8 +54,8 @@
       max-height: 0;
       width: 100%;
       background-color: $bg-color;
-      border-top: solid 2px $alt-bg-color;
-      border-bottom: solid 2px $alt-bg-color;
+      border-top: solid 2px $gray-800;
+      border-bottom: solid 2px $gray-800;
       transition: opacity 0.25s, max-height 0.15s linear;
     }
 
