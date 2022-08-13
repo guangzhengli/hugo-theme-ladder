@@ -36,6 +36,26 @@ $lighter-alt-bg-color-dark: #4f4f4f;
 $link-color-dark: #42a5f5;
 
 
+$body-bg-dark: #181a1b;
+$body-overlay-dark: darken($body-bg-dark, 2.5%);
+
+$border-dark: $gray-800;
+$body-color-dark: $gray-300;
+$dots-dark: darken($body-color-dark, 50%);
+
+$color-dark-cyan: #84ebd9;
+$color-dark-blue: #6ab0e5;
+$color-dark-blue-200: #1565c0;
+$color-dark-purple: #d35af7;
+$color-dark-yellow: #fdec6d;
+$color-dark-pink: #ed6d91;
+$color-dark-pink-200: #dd556a;
+$color-dark-pink-300: #e952a6;
+$color-dark-red: #eb4344;
+$color-dark-orange: #f1964f;
+$color-dark-code-bg: #202020;
+
+
 // Fonts
 $font-family: -apple-system,
 BlinkMacSystemFont,
