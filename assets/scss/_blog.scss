@@ -81,8 +81,10 @@
   }
 
   a {
+    //box-shadow: 0 1px;
     text-decoration: none;
-    color: $color-dark-blue-200;
+    color: $gray-800;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
   }
 }
 
