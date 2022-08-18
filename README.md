@@ -2,8 +2,6 @@
 
 <h4 align=center>🌈 Clean | ⏩ Fast | 📰 Focus on Reading | 🌐 Multi language | 🌙 Multi Dark Theme | 📱 Mobile support</h4>
 
-> Hugo Ladder is a theme based on [hugo-paperMod](https://github.com/adityatelange/hugo-PaperMod).
-
 The [Demo | ExampleSite](https://hugo-ladder.pages.dev/) includes a lot of documentation about Installation, Features with a few more stuff. Make sure you visit it, to get an awesome hands-on experience and get to know about the features ...
 
 Demo is built up with [exampleSite Source Code](https://github.com/guangzhengli/hugo-ladder-exampleSite) (https://github.com/guangzhengli/hugo-ladder-exampleSite) as source.
@@ -13,47 +11,56 @@ Demo is built up with [exampleSite Source Code](https://github.com/guangzhengli/
 ---
 
 <p align="center">
-  <kbd><img src="https://user-images.githubusercontent.com/21258296/114303440-bfc0ae80-9aeb-11eb-8cfa-48a4bb385a6d.png" alt="Mockup image" title="Mockup"/></kbd>
+  <kbd><img src="https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/VPKI7H.png" alt="Ladder image" title="Mockup"/></kbd>
 </p>
+
 
 ---
 
-## how to install
+## Quick Start
 
-```shell
-hugo new site <name of site>
+Just click `Use this template` to create your blog site in the [exampleSite Source Code](https://github.com/guangzhengli/hugo-ladder-exampleSite).
+
+Create a new repository(GitHub Pages) from hugo-ladder-exampleSite to enter : `username.github.io`.
+
+**replace the username by your GitHub account**
+
+Then configure the GitHub page setting following:
+
+![nsrExo](https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/nsrExo.png)
+
+🎉🎉🎉 Open the browser and enter: https://username.github.io 🎉🎉🎉
+
+## Minimal Configuration
+
+Clone your repository.
+
+Build and run hugo server by `hugo server -D` and open in browser http://localhost:1313/.
+
+```yml
+baseURL: 'https://hugo-ladder.pages.dev' # set https://username.github.io
+homepage: 'https://hugo-ladder.pages.dev' # set https://username.github.io
+defaultContentLanguage: 'en' #default language
+params:
+  brand: HOME # set the brand of your site
+  avatarURL: /images/avatar.png # avatar, replace your avatar in the /static/images/
+  author: Hugo Ladder # name
+  authorDescription: # description
+  info:  this is a info # information of your blog site
+  favicon: /images/avatar.png # blog site icon，replace your avatar in the /static/images/
+  options:
+    showDarkMode: true # is show dark mode button
+    enableMultiLang: true # is show multi language button
 ```
 
-```shell
-git init
+Modifying the default configuration. Then push it to your repository.
 
-git add .
+## ALL Configuration
 
-git commit -m "feat: init blog by hugo"
+Following this [article](https://guangzhengli.com/blog/en/how-to-create-your-blog-for-free-by-hugo-ladder-in-30min/) to cofiguration.
 
-git remote add origin git@github.com:guangzhengli/blog.git
+Following this [article](https://guangzhengli.com/blog/en/how-to-integrate-umami-for-free-to-blog-site/) to configure the umami analytics
 
-git push --set-upstream origin master
+## Special Thanks
 
-git push
-```
-
-```shell
-git submodule add https://github.com/guangzhengli/hugo-theme-ladder themes/hugo-theme-ladder
-
-git submodule update --remote
-
-git add .
-
-git commit -m "feat: git submodule updated"
-
-git push
-```
-
-copy config.toml to your site config.toml
-
-```
-theme = "hugo-theme-ladder"
-```
-
-Build your site with hugo server and see the result at http://localhost:1313/.
+* Hugo Ladder is inspired by [hugo-paperMod](https://github.com/adityatelange/hugo-PaperMod).
