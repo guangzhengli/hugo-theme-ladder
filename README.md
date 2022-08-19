@@ -17,9 +17,13 @@ Demo is built up with [exampleSite Source Code](https://github.com/guangzhengli/
 
 ---
 
+## Documentations [`docs`](docs/home.md)
+
+See [`docs`](docs/home.md) folder.
+
 ## Quick Start
 
-Just click `Use this template` to create your blog site in the [exampleSite Source Code](https://github.com/guangzhengli/hugo-ladder-exampleSite).
+Just click `Use this template` to create your blog site in the [exampleSite Repository](https://github.com/guangzhengli/hugo-ladder-exampleSite).
 
 Create a new repository(GitHub Pages) from hugo-ladder-exampleSite to enter : `username.github.io`.
 
