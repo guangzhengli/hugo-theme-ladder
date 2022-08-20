@@ -21,6 +21,18 @@ Demo is built up with [exampleSite Source Code](https://github.com/guangzhengli/
 
 See [`docs`](docs/home.md) folder.
 
+### Basic Usage
+
+* [Quick Start](docs/quick-start.md)
+* [Configurations](docs/configurations.md)
+
+### Extra Guides
+
+* [Multi Language](docs/multi-language.md)
+* [Comment System](docs/comment-system.md)
+* [Analytics](docs/analytics.md)
+* [Analytics Umami](docs/umami.md)
+
 ## Quick Start
 
 Just click `Use this template` to create your blog site in the [exampleSite Repository](https://github.com/guangzhengli/hugo-ladder-exampleSite).
