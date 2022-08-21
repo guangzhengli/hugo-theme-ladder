@@ -2,3 +2,4 @@
 .vscode
 *.lock
 .DS_Store
+resources/*
