@@ -34,4 +34,9 @@
     {{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}
     <script src="{{ $highlightjs.RelPermalink }}"></script>
     <script>hljs.highlightAll();</script>
+
+    {{ if .Site.Params.options.showDarkMode -}}
+        {{ $darkModeInit := resources.Get "js/darkmode-init.js" | js.Build | minify -}}
+        <script>{{ $darkModeInit.Content | safeJS }}</script>
+    {{ end -}}
 </head>
