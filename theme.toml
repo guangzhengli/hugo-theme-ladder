@@ -6,7 +6,7 @@ licenselink = "https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LIC
 description = "A fast, clean Hugo theme"
 homepage = "https://hugo-ladder.pages.dev"
 defaultContentLanguage = "en"
-googleAnalytics = "G-xxx
+googleAnalytics = "G-xxx"
 paginate = 10
 
 [[menu.main]]
