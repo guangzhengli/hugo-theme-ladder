@@ -27,6 +27,10 @@
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
     {{ end }}
 
+    <!-- TODO: add tailwind css to hugo ladder -->
+    <!-- {{ $styles := resources.Get "style.css" }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"> -->
+
 
     {{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />
