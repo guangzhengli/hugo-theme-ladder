@@ -1,0 +1,26 @@
+{
+  "name": "hugo-theme-ladder",
+  "version": "1.0.0",
+  "description": "<h1 align=center>Hugo Theme Ladder | <a href=\"https://hugo-ladder.pages.dev/\" rel=\"nofollow\">Demo</a></h1>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangzhengli/hugo-theme-ladder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guangzhengli/hugo-theme-ladder/issues"
+  },
+  "homepage": "https://github.com/guangzhengli/hugo-theme-ladder#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}
