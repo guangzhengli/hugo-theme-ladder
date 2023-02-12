@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./tailwind.css -o ./assets/style.css",
-    "watch": "npx tailwindcss -i ./tailwind.css -o ./assets/style.css --watch"
+    "build": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css",
+    "watch": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch"
   },
   "repository": {
     "type": "git",
