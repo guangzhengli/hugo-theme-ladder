@@ -1,43 +1,50 @@
-<nav class="navigation">
-    <section class="container">
-        <a class="navigation-brand" href="{{ .Site.BaseURL | relLangURL }}">
+<nav class="max-w-5xl mx-auto bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <section>
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+        
+            <a class="flex items-center" href="{{ .Site.BaseURL | relLangURL }}">
             {{ .Site.Params.brand }}
-        </a>
-        <input type="checkbox" id="menu-toggle" />
-        <label class="menu-button float-right" for="menu-toggle">
-            <span></span><span></span><span></span>
-        </label>
-        {{ if .Site.Menus.main }}
-        <ul class="navigation-list" id="navigation-list">
-            {{ with .Site.Menus.main}}
-            {{ range sort . }}
-            <li class="navigation-item navigation-menu">
-                <a class="navigation-link" href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
-            </li>
-            {{ end }}
-            {{ end }}
+            </a>
 
-            <li class="navigation-item menu-separator">
-                <span>|</span>
-            </li>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
 
-            {{ with .Site.Params.social}}
-            {{ range sort . }}
-            <li class="navigation-item navigation-social">
-                <a class="navigation-link" href="{{ .url | relURL }}">{{ .pre | safeHTML }}</a>
-            </li>
+            {{ if .Site.Menus.main }}
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="flex flex-col items-center p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    {{ with .Site.Menus.main}}
+                    {{ range sort . }}
+                    <li>
+                        <a class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" 
+                        href="{{ index (apply (slice .URL) (.Params.urlFunc | default "relLangURL") ".") 0 }}">{{ .Name }}</a>
+                    </li>
+                    {{ end }}
+                    {{ end }}
+
+
+                    <!-- {{ with .Site.Params.social}}
+                    {{ range sort . }}
+                    <li>
+                        <a class="block items-center pb-4 text-gray-700 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" 
+                        href="{{ .url | relURL }}">{{ .pre | safeHTML }}</a>
+                    </li>
+                    {{ end }}
+                    {{ end }} -->
+
+                    <!-- {{ if .Site.Params.options.showDarkMode -}}
+                    <li class="border-none bg-none pt-2 cursor-pointer">
+                        <button id="mode" type="button" aria-label="toggle user light or dark theme">
+                            <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
+                            <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
+                        </button>
+                    </li>
+                    {{ end -}} -->
+
+                </ul>
+            </div>
             {{ end }}
-            {{ end }}
-
-            {{ if .Site.Params.options.showDarkMode -}}
-            <li class="navigation-item navigation-dark">
-                <button id="mode" type="button" aria-label="toggle user light or dark theme">
-                    <span class="toggle-dark"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></span>
-                    <span class="toggle-light"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></span>
-                </button>
-            </li>
-
-            {{ end -}}
 
             {{ if .Site.Params.options.enableMultiLang -}}
             {{ if .Site.IsMultiLingual }}
@@ -45,14 +52,19 @@
             {{ .Scratch.Set "separator" true }}
             {{ range (default .Site.Home.AllTranslations .Translations) }}
             {{ if ne $.Site.Language .Language }}
-            <li class="navigation-item navigation-language">
-                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-            </li>
+                <div class="flex items-center md:order-2">
+                    <div class="inline-flex items-center justify-center px-4 py-2 text-sm text-gray-500 rounded-lg cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
+                        <a href="{{ .Permalink }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">
+                            <div class="inline-flex items-center">
+                                {{ .Language.LanguageName }}
+                            </div>
+                            </a>
+                    </div>
+                </div>
             {{ end }}
             {{ end }}
             {{ end }}
             {{ end }}
-        </ul>
-        {{ end }}
+        </div>
     </section>
 </nav>

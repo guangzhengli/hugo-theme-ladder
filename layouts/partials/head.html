@@ -9,15 +9,15 @@
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
     <meta name="author" content="{{ site.Params.author }}">
     <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
-    {{- if site.Params.analytics.google.SiteVerificationTag }}
+    <!-- {{- if site.Params.analytics.google.SiteVerificationTag }}
         <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
-    {{- end }}
+    {{- end }} -->
 
-    {{ partial "common/analytics.html" . }}
+    <!-- {{ partial "common/analytics.html" . }}
     {{ partial "common/extensions.html" . }}
-    {{ partial "common/icon.html" . }}
+    {{ partial "common/icon.html" . }} -->
 
-    {{ if .Site.IsServer }}
+    <!-- {{ if .Site.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
     {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
@@ -25,22 +25,21 @@
     {{ $cssFile := (dict "targetPath" "css/main.css" ) }}
     {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
-    {{ end }}
+    {{ end }} -->
 
-    <!-- TODO: add tailwind css to hugo ladder -->
-    <!-- {{ $styles := resources.Get "style.css" }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"> -->
+    {{ $style := resources.Get "style.css" }}    
+    <link rel="stylesheet" href="{{ $style.Permalink }}"> 
 
 
-    {{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}
+    <!-- {{ $highlight := resources.Get "scss/highlight/github-dark.min.css" | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $highlight.RelPermalink }}" />
 
     {{ $highlightjs := resources.Get "js/highlight.min.js" | minify | fingerprint }}
     <script src="{{ $highlightjs.RelPermalink }}"></script>
-    <script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll();</script> -->
 
-    {{ if .Site.Params.options.showDarkMode -}}
+    <!-- {{ if .Site.Params.options.showDarkMode -}}
         {{ $darkModeInit := resources.Get "js/darkmode-init.js" | js.Build | minify -}}
         <script>{{ $darkModeInit.Content | safeJS }}</script>
-    {{ end -}}
+    {{ end -}} -->
 </head>

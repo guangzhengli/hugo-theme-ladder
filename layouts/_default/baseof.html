@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
     {{- partial "head.html" . -}}
-    <body>
-      <main class="wrapper">
+    <body class="max-w-7xl ml-auto mr-auto">
+      <main>
         {{- partial "header.html" . -}}
         <div id="content">
           {{- block "content" . }}{{- end }}
