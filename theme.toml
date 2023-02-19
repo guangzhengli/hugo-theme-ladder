@@ -47,6 +47,7 @@ darkModeTheme = "data-dark-mode"
   showDarkMode = true
   enableImgZooming = true
   enableMultiLang = true
+  showMetaTags = true
 
 [params.comments.giscus]
 enable = true
