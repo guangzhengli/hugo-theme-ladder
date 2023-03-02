@@ -13,6 +13,8 @@
         <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
     {{- end }}
 
+    <link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}/index.xml" title="{{ .Site.Title }}">
+
     {{ partial "common/analytics.html" . }}
     {{ partial "common/extensions.html" . }}
     {{ partial "common/icon.html" . }}
