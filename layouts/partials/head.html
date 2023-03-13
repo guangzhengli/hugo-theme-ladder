@@ -19,8 +19,6 @@
     {{ partial "common/extensions.html" . }}
     {{ partial "common/icon.html" . }}
 
-    <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-webfont/1.6.0/style.css" />
-
     {{ if .Site.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
     {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile }}

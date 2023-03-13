@@ -1,5 +1,6 @@
-// Color system
+@import url(../../font/LXGWWenKai-Regular.woff2);
 
+// Color system
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -11,7 +12,6 @@ $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
 $black:    #000;
-
 
 // Colors
 $bg-color: white;
@@ -57,7 +57,7 @@ $color-dark-code-bg: #202020;
 
 
 // Fonts
-$font-family: "LXGW WenKai", sans-serif;
+$font-family: "LXGWWenKai-Regular";
 $code-font-family: SFMono-Regular,
 Consolas,
 Liberation Mono,
