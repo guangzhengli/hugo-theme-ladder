@@ -1,0 +1,32 @@
+.card-wrapper {
+  position: relative;
+  max-width: 80rem;
+  margin: auto;
+  padding: 1.5rem;
+
+  .card-list {
+    // display: grid;
+    // gap: 2.4rem 1.6rem;
+    // grid-template-columns: repeat(2, 1fr);
+    // padding: 3.2rem 1.6rem;
+  
+  }
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px -2px #000a3c1a;
+    background-color: #fff;
+    overflow: hidden;
+    transition: box-shadow .2s;
+
+    &:hover {
+      box-shadow: 0 6px 12px -4px #001b4433;
+    }
+  }
+
+}
+
+

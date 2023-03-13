@@ -1,0 +1,30 @@
+{{ define "content" }}
+<div class="card-wrapper">
+  <div>
+    <div class="card-list">
+      {{ range .Paginator.Pages }}
+        <article>
+          <div class="card">
+
+              <img class="card-img" src="{{ .Params.image }}">
+              
+              <h3><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+              {{ partial "blog/meta.html" . }}
+              {{ .Summary }}
+          </div>
+        </article>
+      {{ end -}}
+    </div>
+    {{ if gt .Paginator.TotalPages 1 }}
+    <div class="paginator">
+      {{ if .Paginator.HasPrev }}
+      <a class="prev" href="{{ .Paginator.Prev.URL }}">&larr;&nbsp;&nbsp;Pre Page</a>
+      {{ end }}
+      {{ if .Paginator.HasNext }}
+      <a class="next" href="{{ .Paginator.Next.URL }}">Next Page&nbsp;&nbsp;&rarr;</a>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
