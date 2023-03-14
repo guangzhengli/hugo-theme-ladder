@@ -1,0 +1,128 @@
+baseURL: 'https://hugo-ladder.pages.dev'
+title: LADDER
+theme: hugo-theme-ladder
+license: MIT
+licenselink: 'https://github.com/guangzhengli/hugo-theme-ladder/blob/master/LICENSE'
+description: 'A fast, clean Hugo theme'
+homepage: 'https://hugo-ladder.pages.dev'
+defaultContentLanguage: 'en'
+googleAnalytics: G-7E4JNTL3ES
+enableRobotsTXT: true
+paginate: 10
+hasCJKLanguage: true
+copyright: "2023 GuangzhengLi All rights reserved"
+Author:
+  name: "Guangzheng Li"
+  email: "iguangzhengli@gmail.com"
+params:
+  brand: HOME
+  avatarURL: /images/avatar.png
+  author: Hugo Ladder
+  authorDescription: A clean, fast hugo theme focused on Reading
+  info: Build a free and beautiful blog site to record your thoughts and increase your influence
+  favicon: /images/avatar.ico
+  options:
+    showDarkMode: true
+    enableImgZooming: true
+    enableMultiLang: true
+    showMetaTags: true
+  darkModeTheme: data-dark-mode
+  comments:
+    giscus:
+      enable: true
+      repo: guangzhengli/hugo-ladder-exampleSite
+      repo_id: R_kgDOHyVOjg
+      category: Announcements
+      category_id: DIC_kwDOHyVOjs4CQsH7
+      mapping: pathname
+      position: top
+      lang: en # pick a language from https://github.com/giscus/giscus/tree/main/locales
+    utteranc:
+      enable: false
+      repo: guangzhengli/blog-comments
+      issueTerm: pathname
+  analytics:
+    google:
+      SiteVerificationTag: RL6kP6-6yjRPyYGLeqBQ2JIX6QQAz7A6gHZb7bHlZnU
+    umami:
+      enable: false
+      website_id: 24349452-bff6-4e96-93bf-6c764e191b26
+      url: https://umami-ochre-nu.vercel.app/hugo-ladder.js
+  guestbook:
+    title: Guestbook
+    description: Leave a comment below. It could be anything – appreciation, information, wisdom, or even humor. Surprise me!!!
+  social:
+    - name: GitHub
+      pre: >-
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather
+        feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0
+        0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0
+        0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09
+        1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44
+        7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+      url: 'https://github.com/guangzhengli'
+    - name: Twitter
+      pre: >-
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather
+        feather-twitter"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0
+        0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20
+        0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+      url: 'https://twitter.com/iguangzhengli'
+languages:
+  en:
+    languageName: English
+    menu:
+      main:
+        - name: Blog
+          url: /blog
+          weight: 1
+        - name: Art
+          url: /art
+          weight: 2
+        - name: Tags
+          url: /tags
+          weight: 3
+        - name: Archive
+          url: /archives
+          weight: 4
+        - name: Guest
+          url: /guestbook
+          weight: 5
+        - name: Monitor
+          url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
+          weight: 6
+  zh:
+    languageName: 中文
+    author: Ladder 主题
+    authorDescription: 一个美观，快速并且专注于阅读的主题
+    info: 帮助开发者构建一个免费并且漂亮的博客网站，记录自己的思考并且提高自己的影响力
+    guestbook:
+      title: 留言板
+      description: 您的评论，会让该网站更精彩！
+    menu:
+      main:
+        - name: 文章
+          url: /blog
+          weight: 1
+        - name: 生活
+          url: /art
+          weight: 2
+        - name: 标签
+          url: /tags
+          weight: 3
+        - name: 历史
+          url: /archives
+          weight: 3
+        - name: 留言板
+          url: /guestbook
+          weight: 4
+        - name: 统计
+          url: https://umami-ochre-nu.vercel.app/share/o3zAba1V/guangzhengli
+          weight: 5
+taxonomies:
+  series: series
+  tag: tags
