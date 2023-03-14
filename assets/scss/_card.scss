@@ -25,6 +25,16 @@
     &:hover {
       box-shadow: 0 6px 12px -4px #001b4433;
     }
+
+    p {
+      margin-left: 1rem;
+    }
+
+    .card-img {
+      width: auto;
+      height: auto;
+      max-height: 80rem;
+    }
   }
 
 }
