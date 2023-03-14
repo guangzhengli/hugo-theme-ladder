@@ -2,6 +2,10 @@
 one = "blog"
 other = "blog"
 
+[art]
+one = "art"
+other = "art"
+
 [tags]
 one = "tag"
 other = "tags"
