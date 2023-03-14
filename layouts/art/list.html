@@ -5,11 +5,11 @@
       {{ range .Paginator.Pages }}
         <article>
           <div class="card">
-
-              <img class="card-img" src="{{ .Params.image }}">
-              
-              <h3><a href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
-              {{ partial "blog/meta.html" . }}
+              <div class="card-thumbnail">
+                <a href="{{ .RelPermalink }}">
+                  <img class="card-img" src="{{ .Params.image }}">
+                </a>
+              </div>
               {{ .Summary }}
           </div>
         </article>
