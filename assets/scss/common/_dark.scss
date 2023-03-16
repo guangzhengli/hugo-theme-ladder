@@ -70,6 +70,10 @@
   background: $body-bg-dark;
 }
 
+[data-dark-mode] body .card {
+  background: $body-bg-dark;
+}
+
 [data-dark-mode] body .blog-toc {
   a:hover {
     color: $body-color-dark;
