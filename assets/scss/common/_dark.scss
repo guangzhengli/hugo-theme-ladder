@@ -71,7 +71,11 @@
 }
 
 [data-dark-mode] body .card {
-  background: $body-bg-dark;
+  background: $gray-900;
+
+  p {
+    color: $gray-400;
+  }
 }
 
 [data-dark-mode] body .blog-toc {

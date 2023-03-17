@@ -4,14 +4,23 @@
     <div class="card-list">
       {{ range .Paginator.Pages }}
         <article>
-          <div class="card">
-              <div class="card-thumbnail">
-                <a href="{{ .RelPermalink }}">
-                  <img class="card-img" src="{{ .Params.image }}">
-                </a>
-              </div>
-              {{ .Params.desc }}
-          </div>
+          <a href="{{ .RelPermalink }}">
+            <div class="card">
+                <div class="card-thumbnail">
+                    <img class="card-img" src="{{ .Params.image }}">
+                </div>
+                <div class="card-header">
+                  <div class="card-title">
+                    {{ .Params.title }}
+                  </div>
+                  <div class="card-date">
+                    {{ .Date.Format "2006-01-02" }}
+                  </div>
+                </div>
+
+                <p>{{ .Params.desc }}</p>
+            </div>
+          </a>
         </article>
       {{ end -}}
     </div>

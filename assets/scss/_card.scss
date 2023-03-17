@@ -4,6 +4,12 @@
   margin: auto;
   padding: 1.5rem;
 
+  a {
+    &:link {
+      text-decoration: none;
+    }
+  }
+
   .card {
     position: relative;
     display: flex;
@@ -20,13 +26,26 @@
     }
 
     p {
-      margin-left: 1rem;
+      margin-left: 2rem;
+      font-size: medium;
+      color: $gray-800;
     }
 
     .card-img {
       width: auto;
       height: auto;
       max-height: 80rem;
+    }
+
+    .card-title {
+      display: inline-block;
+      margin-left: 2rem;
+    }
+
+    .card-date {
+      display: inline-block;
+      float: right;
+      margin-right: 2rem;
     }
   }
 

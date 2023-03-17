@@ -4,7 +4,7 @@ date: 2021-03-14T21:34:36+08:00
 tags: ["hugo", "ladder", "Tutorial", "analytics", "umami"]
 series: ["how to create your blog"]
 image: "https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/OZcU7U.png"
-desc: "This article is about how to integrate [umami](https://umami.is/) website analytics to your website for free. The database use  [postgres](https://supabase.com/docs/guides/database) with 500M storage limit provided by [supabase](https://app.supabase.com/)."
+desc: "This article is about how to integrate umami website analytics to your website for free."
 featured: true
 ---
 
