@@ -3,9 +3,8 @@ title: How to create your blog for free in 10min
 date: 2022-08-01
 tags: ["hugo", "ladder", "Tutorial", "GitHub Pages"]
 image: "https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/j0eHDj.png"
+desc: "This article is the first in a series on how to build a free independent blog, and will also teach you how to quickly use the features of [GitHub Pages](https://pages.github.com/) to build your blog."
 ---
-
-This article is the first in a series on how to build a free independent blog, and will also teach you how to quickly use the features of [GitHub Pages](https://pages.github.com/) to build your blog.
 
 <!--more-->
 

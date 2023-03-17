@@ -3,9 +3,8 @@ title: 如何 10 分钟快速搭建你自己的独立博客
 date: 2022-08-01
 tags: ["hugo", "ladder主题", "教程", "GitHub Pages"]
 image: "https://cdn.jsdelivr.net/gh/guangzhengli/PicURL@master/uPic/j0eHDj.png"
+desc: "本文是如何搭建免费的独立博客系列的第一篇，也将教大家如何快速的使用 [GitHub Pages](https://pages.github.com/) 的功能来搭建属于自己的博客。"
 ---
-
-本文是如何搭建免费的独立博客系列的第一篇，也将教大家如何快速的使用 [GitHub Pages](https://pages.github.com/) 的功能来搭建属于自己的博客。
 
 <!--more-->
 
