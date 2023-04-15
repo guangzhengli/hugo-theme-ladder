@@ -1,0 +1,31 @@
+[blog]
+one = "блог"
+other = "блоги"
+
+[tags]
+one = "тег"
+other = "теги"
+
+[archive]
+one = "архів"
+other = "архіви"
+
+[series]
+one = "серія"
+other = "серії"
+
+[reading_time]
+one = "Одна хвилина"
+other = "{{ .Count }} хв."
+
+[word_count]
+one = "одне слово"
+other = "{{ .Count }} слів"
+
+[related_resources]
+other = "Пов'язані ресурси"
+
+[featured_posts]
+one = "Рекомендовані пости"
+other = "Рекомендовані пости"
+
