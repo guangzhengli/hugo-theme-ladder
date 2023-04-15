@@ -124,6 +124,33 @@ name = "网站统计"
 url = "https://umami-ochre-nu.vercel.app/share/R1lHz7QY/hugo-ladder-exampleSite"
 weight = 5
 
+[languages.uk]
+languageName = "Українська"
+
+  [languages.zh.guestbook]
+  title = "Гостьова книга"
+  description = "Залиште коментар нижче. Це може бути будь-що - запитання, вдячність, інформація або навіть гумор."
+
+[[languages.zh.menu.main]]
+name = "Блог"
+url = "/blog"
+weight = 1
+
+[[languages.zh.menu.main]]
+name = "Теги"
+url = "/tags"
+weight = 2
+
+[[languages.zh.menu.main]]
+name = "Архів"
+url = "/archives"
+weight = 3
+
+[[languages.zh.menu.main]]
+name = "Гостьова книга"
+url = "/guestbook"
+weight = 4
+
 [taxonomies]
 series = "series"
 tag = "tags"
