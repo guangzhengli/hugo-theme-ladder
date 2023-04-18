@@ -75,6 +75,20 @@
   float: right;
 }
 
+.paginator .prev {
+  .icon {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.paginator .next {
+  .icon {
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
 .blog-content {
   p img {
     border-radius: 0.6rem;

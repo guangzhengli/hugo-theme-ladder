@@ -16,10 +16,18 @@
   {{ if and (gt (len $pages) 1) (in $pages . ) }}
   <div class="paginator">
     {{ with $pages.Next . }}
-    <a class="prev" href="{{ .Permalink }}"><span>&larr;&nbsp;&nbsp;</span><span>{{ .Name }}</span></a>
+    <a class="prev" href="{{ .Permalink }}">
+        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9.67892 5C8.23574 6.43836 4.59073 9.65976 1.1059 11.5253C0.961647 11.6025 0.966025 11.9424 1.11133 12.0147C3.32092 13.115 7.44471 16.4949 9.67892 19M1.97778 11.9222C7.30408 12.1419 19 12.5 23 10.5" stroke="currentColor" stroke-linecap="round"/>
+        </svg>
+      <span>{{ .Name }}</span></a>
     {{ end }}
     {{ with $pages.Prev . }}
-    <a class="next" href="{{ .Permalink }}"><span>{{ .Name }}</span><span>&nbsp;&nbsp;&rarr;</span></a>
+    <a class="next" href="{{ .Permalink }}"><span>{{ .Name }}</span>
+        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.3211 5C15.7643 6.43836 19.4093 9.65976 22.8941 11.5253C23.0384 11.6025 23.034 11.9424 22.8887 12.0147C20.6791 13.115 16.5553 16.4949 14.3211 19M22.0222 11.9222C16.6959 12.1419 5 12.5 1 10.5" stroke="currentColor" stroke-linecap="round"/>
+        </svg>
+    </a>
     {{ end }}
   </div>
   {{ end }}
