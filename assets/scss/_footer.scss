@@ -32,6 +32,10 @@
   outline: 0;
 }
 
+.top-link:hover {
+  background: $white;
+}
+
 .top-link {
   font-size: 80%;
   color: $fg-color;
