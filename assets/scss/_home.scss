@@ -80,3 +80,11 @@
   }
 }
 
+.notfound {
+  display: block;
+  text-align: center;
+
+  .image {
+    transform: scale(0.5);
+  }
+}
