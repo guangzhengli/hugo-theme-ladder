@@ -27,6 +27,9 @@ params:
     enableMultiLang: true
     showMetaTags: true
   darkModeTheme: data-dark-mode
+  sponsors:
+    title: Sponsors
+    description: Support me by becoming a sponsor
   comments:
     giscus:
       enable: true

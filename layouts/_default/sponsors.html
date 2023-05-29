@@ -1,0 +1,33 @@
+{{ define "content" }}
+<div class="guestbook">
+    <h1>{{ .Site.Params.sponsors.title }}</h1>
+    <p>{{ .Site.Params.sponsors.description }}</p>
+
+    <div class="sponsors-buymeacoffee-icon">
+        <a href="https://www.buymeacoffee.com/iguangzhengli"><img
+            src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=iguangzhengli&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+    </div>
+
+    <div class="sponsors-buymeacoffee-qr">
+        <a><img src="https://storage.guangzhengli.com/images/buymeacoffee_sponsors.png" /></a>
+        <div class="sponosrs-text">Buy me a coffee</div>
+    </div>
+
+    <div class="sponsors-wechat-qr">
+        <a><img src="https://storage.guangzhengli.com/images/alipay_sponsors.jpeg"></a>
+        <div class="sponosrs-text">微信支付</div>
+    </div>
+
+    <div class="sponsors-alipay-qr">
+        <a><img src="https://storage.guangzhengli.com/images/weixin_sponsors.jpeg"></a>
+        <div class="sponosrs-text">支付宝</div>
+    </div>
+
+    <div class="sponsors-list">
+        <h1>Sponsor List:</h1>
+        {{ .Content }}
+    </div>
+    <p>{{ .Params.sponsors_desc }}</p>
+
+</div>
+{{ end }}
