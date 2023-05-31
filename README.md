@@ -84,6 +84,12 @@ Following this [article](https://guangzhengli.com/blog/en/how-to-create-your-blo
 
 Following this [article](https://guangzhengli.com/blog/en/how-to-integrate-umami-for-free-to-blog-site/) to configure the umami analytics
 
+
+## Sponsor
+
+if you like this theme, you can sponsor me to buy a cup of coffee.
+https://guangzhengli.com/sponsors
+
 ## Special Thanks
 
 * Hugo Ladder is inspired by [hugo-paperMod](https://github.com/adityatelange/hugo-PaperMod).
