@@ -30,6 +30,17 @@ params:
   sponsors:
     title: Sponsors
     description: Support me by becoming a sponsor
+    buymeaCoffee:
+      enable: true
+      url: https://www.buymeacoffee.com/iguangzhengli
+      buttom_api: https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=iguangzhengli&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff
+      qr: https://storage.guangzhengli.com/images/buymeacoffee_sponsors.png
+    wechat:
+      enable: true
+      qr: https://storage.guangzhengli.com/images/alipay_sponsors.jpeg
+    alipay:
+      enable: true
+      qr: https://storage.guangzhengli.com/images/weixin_sponsors.jpeg
   comments:
     giscus:
       enable: true
