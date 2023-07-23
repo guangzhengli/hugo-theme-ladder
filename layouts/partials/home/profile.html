@@ -2,8 +2,8 @@
     <div class="info">
         <div class="intro">
             <h1>{{ .Site.Params.author }}</h1>
-            <small>{{ .Site.Params.authorDescription }}</small>
-            <p>{{ .Site.Params.info }}</p>
+            <small>{{ .Site.Params.authorDescription | markdownify }}</small>
+            <p>{{ .Site.Params.info | markdownify }}</p>
         </div>
 
         {{ if .Site.Params.avatarURL }}
