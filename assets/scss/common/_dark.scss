@@ -120,6 +120,14 @@
   }
 }
 
+[data-dark-mode] .home .info .intro {
+  a {
+    box-shadow: 0 0;
+    text-decoration: none;
+    color: $color-dark-blue;
+  }
+}
+
 [data-dark-mode] .navigation .navigation-list {
 
   @media only screen and (max-width: 768px) {
