@@ -151,6 +151,34 @@ name = "Гостьова книга"
 url = "/guestbook"
 weight = 4
 
+[languages.pt-br]
+languageName = "🇧🇷"
+
+  [languages.pt-br.guestbook]
+  title = "Livro de Visitas"
+  description = "Deixe um comentário abaixo. Pode ser qualquer coisa - uma pergunta, agradecimento, informação ou até mesmo uma piada."
+
+[[languages.pt-br.menu.main]]
+name = "Blog"
+url = "/blog"
+weight = 1
+
+[[languages.pt-br.menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 2
+
+[[languages.pt-br.menu.main]]
+name = "Arquivos"
+url = "/archives"
+weight = 3
+
+[[languages.pt-br.menu.main]]
+name = "Livro de Visitas"
+url = "/guestbook"
+weight = 4
+
+
 [taxonomies]
 series = "series"
 tag = "tags"

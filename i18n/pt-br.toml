@@ -1,0 +1,34 @@
+[blog]
+one = "blog"
+other = "blog"
+
+[art]
+one = "arte"
+other = "artes"
+
+[tags]
+one = "tag"
+other = "tags"
+
+[archive]
+one = "Arquivo"
+other = "Arquivos"
+
+[series]
+one = "séries"
+other = "séries"
+
+[reading_time]
+one = "Um minuto"
+other = "{{ .Count }} minutos"
+
+[word_count]
+one = "Uma palavra"
+other = "{{ .Count }} palavras"
+
+[related_resources]
+other = "Recursos relacionados"
+
+[featured_posts]
+one = "Postagem em destaque"
+other = "Postagens em destaque"
