@@ -127,7 +127,7 @@ weight = 5
 [languages.uk]
 languageName = "Українська"
 
-  [languages.zh.guestbook]
+  [languages.uk.guestbook]
   title = "Гостьова книга"
   description = "Залиште коментар нижче. Це може бути будь-що - запитання, вдячність, інформація або навіть гумор."
 
