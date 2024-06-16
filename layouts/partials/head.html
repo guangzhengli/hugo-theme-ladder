@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" />
 
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
     {{ $cssFile := (dict "targetPath" "css/main.css" "enableSourceMap" true ) }}
     {{ $styles := resources.Get "/scss/app.scss" | toCSS $cssFile }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
